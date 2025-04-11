@@ -11,4 +11,6 @@ export interface Area {
   inhabitants?: string[];
   dangerLevel?: number; // Pour les zones de chasse/donjons
   connectedAreas?: string[]; // ID des zones reliées
+  previewImage?: string; // URL ou chemin local de l'image principale
+  additionalImages?: string[]; // Liste d'URLs ou chemins locaux pour les images additionnelles
 }

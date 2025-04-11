@@ -59,7 +59,7 @@ export default function Header() {
       {/* Header Banner */}
       <div className="relative h-48 md:h-64 overflow-hidden">
         {/* Dark overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/0 z-10"></div>
         
         {/* Header image */}
         <Image
