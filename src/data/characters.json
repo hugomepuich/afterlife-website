@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ca7bee18-c3b2-4ae9-a02b-159cd545fffb",
+    "slug": "test",
+    "name": "test",
+    "surname": "tzst",
+    "race": "Tstrace",
+    "affiliation": "",
+    "age": 0,
+    "description": "dzqd",
+    "history": "qzdzq",
+    "karma": "good"
+  },
+  {
+    "id": "b006cc6f-029b-46e6-a05b-ea3d979e9f7e",
+    "slug": "ivy",
+    "name": "Ivy",
+    "surname": "Sohre Arya",
+    "race": "Vi Umbra",
+    "affiliation": "None",
+    "age": 1000,
+    "description": "Of medium height and ghost-white hair, she walks the edge between weapon and woman. Chains clasp her wrists—not as punishment, but to restrain a power even she cannot name. Fiercely loyal to her master, she revels in bloodshed, yet would sooner die than harm those she holds dear. Cold and cruel upon first encounter, her tenderness is a secret earned through time. Her past is a void—forgotten, or perhaps stolen—and only the scent of death feels familiar.",
+    "history": "Ivy was born of a deep and aching loneliness.\nShe took shape from the remnants of darkness clinging to the soul of the Lightborn as he emerged from the catacombs.\n\nThroughout his recovery, Ivy cared for him relentlessly, neglecting her own well-being, clinging to the hope that he might one day reveal the reason for her existence — and the truth of the world around them.\n\nUnaware of the immense power sealed within her, she remains bound by massive chains, both physical and unseen.\nDrawn to her master by a tether she cannot explain, Ivy swears to fight at his side, even if it means offering her life.\n\nHer fate is entwined with his — in his desires, his destiny, and the path he unknowingly charts for her.\nAs their journey unfolds, Ivy’s bond with him deepens. She begins to question who she was before, eager to please him, desperate to understand herself.\n\nEach relic of the old king stirs something within her — whispers of a forgotten truth, fragments of a soul not entirely her own.\nIn the depths beneath the Black Temple, Ivy learns the unthinkable: a fragment of the king’s demon resides within her. The thrill she feels when killing is no accident — it is hunger.\n\nWithin the Crypt of the Uneatens, Ivy realizes her demon is consuming her. Her time is short.\nIn those fleeting days, she becomes tender, devoted — hoping to escape her fate through some twist of karmic mercy. But truthfully, it is the thought of losing her master that breaks her heart.\n\nIn the Red Vale, Ivy sheds her chains and awakens her true strength. Yet the cost is steep: she becomes trapped in an eternal state of negative karma.\nStill, she lives — and serves.\n\nIn the Soiled Lands, despair twists her longing. She attempts to kill and consume her master — not from betrayal, but from a desperate desire to keep him with her forever.\n\nIn the Abyss, she encounters Azaryiah. The two women recognize in each other a strange mirror — in form, in combat, in sorrow.\nThe meeting reveals the truth of their nature. And for a moment, Ivy knows joy, as the queen once did.\n\nFrom then on, she seeks fusion — not just loyalty, but unity with her master.\nHer meeting with the Soul Weaver shatters her heart, no matter the outcome. Yet still, she fights to win his love, until the very end.\n\nShould she survive until the final battle, Ivy will fall — slain by the king as she throws herself in front of a blow meant for her master, a final act of loyalty beyond words.\n\nIf he prevails, Ivy will rise again. And in the light of victory, she shall be crowned the new queen of the Afterlife.",
+    "karma": "neutral",
+    "previewImage": "/uploads/cd4ccacf-8a24-4b58-87c7-fc61f1d1cc82-ivy-drawing.png",
+    "additionalImages": [
+      "/uploads/e3adfa6b-3443-4f72-851e-d560627a0f59-GnQVStaXAAAW-gs.jpg",
+      "/uploads/a97d024a-c774-4898-b940-2a30857646af-ivy-sc-02.png",
+      "/uploads/8acf94fb-23e0-4c6e-b7f6-55e88780a4b6-HighresScreenshot00024.png",
+      "/uploads/edf04aa4-f4aa-416d-a96b-dc8882b5ecfc-HighresScreenshot00030.png"
+    ]
+  },
+  {
+    "id": "53672232-1f11-488d-9740-12eea417012b",
+    "slug": "azaryiah",
+    "name": "Azaryiah",
+    "surname": "Arlaeros",
+    "race": "Vi Umbra",
+    "affiliation": "Crescent Order",
+    "age": 1000,
+    "description": "Azaryiah's Description",
+    "history": "Azaryiah's Story",
+    "karma": "bad",
+    "previewImage": "/uploads/f4853ded-872a-4648-b753-858dc9a33134-azadraw.png",
+    "additionalImages": []
+  }
+]
