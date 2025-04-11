@@ -23,4 +23,7 @@ export interface Character {
   description: string;
   history?: string;
   karma?: Karma;
+  // Nouvelles propriétés pour les images
+  previewImage?: string; // URL ou chemin local de l'image principale
+  additionalImages?: string[]; // Liste d'URLs ou chemins locaux pour les images additionnelles
 }
