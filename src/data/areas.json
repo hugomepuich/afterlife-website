@@ -1,0 +1,26 @@
+[
+  {
+    "id": "167c6cf6-621e-4458-964b-67e89cc96a47",
+    "slug": "naevora",
+    "name": "Naevora",
+    "type": "hunt-zone",
+    "description": "Once a peaceful haven, Naevora now lingers as a hollow echo of its former self — inhabited only by the few wretched souls spared the full wrath of the curse.",
+    "dangerLevel": 3,
+    "previewImage": "/uploads/a9c4419e-41ee-4127-8310-a69d07c58aa3-HighresScreenshot00017.png",
+    "connectedAreas": [
+      "d888f34d-089d-496b-b65e-2488d4367e7b"
+    ]
+  },
+  {
+    "id": "d888f34d-089d-496b-b65e-2488d4367e7b",
+    "slug": "mausoleum-of-lamentations",
+    "name": "Mausoleum of Lamentations",
+    "type": "dungeon",
+    "description": "Once a sacred place of worship for the Naevorians, this temple now harbors a multitude of secrets. No soul has dared to set foot within its walls since the Mayhem.",
+    "dangerLevel": 5,
+    "previewImage": "/uploads/61430072-9e38-4543-b324-1513f196cb6b-HighresScreenshot00018.png",
+    "connectedAreas": [
+      "167c6cf6-621e-4458-964b-67e89cc96a47"
+    ]
+  }
+]
