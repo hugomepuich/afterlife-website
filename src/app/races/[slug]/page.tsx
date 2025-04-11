@@ -52,39 +52,17 @@ export default function RaceDetailPage({ params }: { params: { slug: string } })
                 </Link>
             </div>
             
+            {/* Race Title Banner (without image) */}
+            <div className="bg-gray-900/95 border border-gray-800 rounded-lg mb-6 p-6">
+                <h1 className="text-3xl font-bold text-white">{race.name}</h1>
+            </div>
+            
             {/* Main Content */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 {/* Left column - Main race info */}
                 <div className="lg:col-span-2">
-                    {/* Race banner */}
-                    <div className="bg-gray-900/95 border border-gray-800 rounded-lg overflow-hidden">
-                        <div className="relative h-60 w-full">
-                            {race.image ? (
-                                <>
-                                    <Image 
-                                        src={race.image} 
-                                        alt={race.name} 
-                                        fill 
-                                        className="object-cover"
-                                        priority
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                                </>
-                            ) : (
-                                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
-                                    </svg>
-                                </div>
-                            )}
-                            
-                            {/* Race name */}
-                            <div className="absolute bottom-0 left-0 w-full p-6">
-                                <h1 className="text-3xl font-bold text-white drop-shadow-md">{race.name}</h1>
-                            </div>
-                        </div>
-                        
-                        {/* Description */}
+                    {/* Description */}
+                    <div className="bg-gray-900/95 border border-gray-800 rounded-lg overflow-hidden mb-6">
                         <div className="p-6">
                             <div className="mb-6">
                                 <h2 className="text-lg font-semibold text-white mb-2 flex items-center">
@@ -112,7 +90,7 @@ export default function RaceDetailPage({ params }: { params: { slug: string } })
                     
                     {/* Inhabited Regions */}
                     {raceRegions.length > 0 && (
-                        <div className="mt-6 bg-gray-900/95 border border-gray-800 rounded-lg p-6">
+                        <div className="bg-gray-900/95 border border-gray-800 rounded-lg p-6">
                             <h2 className="text-lg font-semibold text-white mb-4 flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -165,8 +143,51 @@ export default function RaceDetailPage({ params }: { params: { slug: string } })
                     )}
                 </div>
                 
-                {/* Right column - Stats and traits */}
-                <div>
+                {/* Right column - Portrait Image, Stats and traits */}
+                <div className="space-y-6">
+                    {/* Race portrait in portrait format */}
+                    <div className="bg-gray-900/95 border border-gray-800 rounded-lg overflow-hidden">
+                        <div className="p-4 border-b border-gray-800">
+                            <h2 className="text-lg font-semibold text-white flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                Race Portrait
+                            </h2>
+                        </div>
+                        
+                        {/* Portrait Image Container */}
+                        <div className="p-4 flex justify-center">
+                            <div className="relative h-[400px] w-full max-w-[280px] rounded-md overflow-hidden">
+                                {race.image ? (
+                                    <>
+                                        <Image 
+                                            src={race.image} 
+                                            alt={race.name} 
+                                            fill 
+                                            className="object-cover"
+                                            priority
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        
+                                        {/* Decorative frame */}
+                                        <div className="absolute inset-0 border border-blue-900/30 pointer-events-none"></div>
+                                        <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-blue-800/50 pointer-events-none"></div>
+                                        <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-blue-800/50 pointer-events-none"></div>
+                                        <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-blue-800/50 pointer-events-none"></div>
+                                        <div className="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-blue-800/50 pointer-events-none"></div>
+                                    </>
+                                ) : (
+                                    <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                                        </svg>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+                    
                     {/* Race traits card */}
                     <div className="bg-gray-900/95 border border-gray-800 rounded-lg overflow-hidden">
                         <div className="p-4 border-b border-gray-800">
@@ -195,7 +216,7 @@ export default function RaceDetailPage({ params }: { params: { slug: string } })
                     </div>
                     
                     {/* Race statistics */}
-                    <div className="mt-6 bg-gray-900/95 border border-gray-800 rounded-lg overflow-hidden">
+                    <div className="bg-gray-900/95 border border-gray-800 rounded-lg overflow-hidden">
                         <div className="p-4 border-b border-gray-800">
                             <h2 className="text-lg font-semibold text-white flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
